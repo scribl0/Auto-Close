@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Close",
+    "version": "1.0",
+    "description": "closes new tabs automatically, usefull for redirects, made by scribl",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "toggleCmd": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+K",
+                "mac": "Command+Shift+K"
+            },
+        "description": "Toggle on/off"
+        }
+    },
+    "icons": {
+        "128": "icons/icon.png"
+    }
+  }
+  
