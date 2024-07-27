@@ -1,5 +1,5 @@
 let currentStatus = "off";
-console.log("Created By Scribl, All Rights Reserved --> ")
+console.log("Created By Scribl, All Rights Reserved --> https://github.com/scribl0")
 
 function toggle() {
     if (currentStatus == "off") {
