@@ -3,10 +3,7 @@
     "name": "Auto Close",
     "version": "1.0",
     "description": "closes new tabs automatically, usefull for redirects, made by scribl",
-    "permissions": [
-        "activeTab",
-        "tabs"
-    ],
+    "permissions": ["activeTab", "tabs", "offscreen", "notifications"],
     "action": {
         "default_popup": "popup.html"
     },
