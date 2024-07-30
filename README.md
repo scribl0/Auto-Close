@@ -15,3 +15,4 @@ Automatically closes newly opened tabs when the extension is toggled on
     - go to tags
     - click on tag v2.x
     - all release under v2.x will be there
+    - in this case v2.1 will be found in tag v2.x
