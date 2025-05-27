@@ -1,26 +1,32 @@
 {
     "manifest_version": 3,
     "name": "Auto Close",
-    "version": "2.0",
-    "description": "closes new tabs automatically, usefull for redirects, made by scribl",
-    "permissions": ["activeTab", "tabs", "offscreen", "notifications"],
+    "version": "3.0",
+    "description": "Closes new tabs automatically—so handy for evil redirects! Made by Scribl & Vamperlium.",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "offscreen",
+      "notifications",
+      "storage"           
+    ],
     "action": {
-        "default_popup": "popup.html"
+      "default_popup": "popup.html"
     },
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
     "commands": {
-        "toggleCmd": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+K",
-                "mac": "Command+Shift+K"
-            },
+      "toggleCmd": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+K",
+          "mac":     "Command+Shift+K"
+        },
         "description": "Toggle on/off"
-        }
+      }
     },
     "icons": {
-        "128": "icons/icon.png"
+      "128": "icons/icon.png"
     }
   }
   

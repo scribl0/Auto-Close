@@ -71,13 +71,6 @@ chrome.tabs.onCreated.addListener(function(tab) {
     }
 });
 
-//window closer
-chrome.windows.onCreated.addListener(function(window) {
-    if (currentStatus == "on") {
-        chrome.windows.remove(window.id);
-    }
-});
-
 //persistant worker
 async function createOffscreen() {
     await chrome.offscreen.createDocument({

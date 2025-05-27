@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Auto Closer</title>
-    <link rel="stylesheet" type="text/css" href="popup.css">
+  <meta charset="UTF-8">
+  <title>Auto Closer</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="off" id="status">Off</h1>
-        <button class="btn">Toggle</button>
-        <p>Ctrl+Shift+K</p>
-        <p>Cmd+Shift+K</p>
-    </div>
+  <!-- Frosted‑glass 3‑D card -->
+  <div class="card">
+    <h1 id="status" class="status off">Off</h1>
+
+    <button id="toggleBtn" class="btn depth">Toggle</button>
+
+    <p class="shortcut">Ctrl&nbsp;+&nbsp;Shift&nbsp;+&nbsp;K</p>
+    <p class="shortcut">Cmd&nbsp;+&nbsp;Shift&nbsp;+&nbsp;K</p>
+
     <div class="footer">
-        <button class="notiBtn" id="notiOn">Notify Me</button>
+      <button id="notiOn" class="notiBtn depth">Notify Me</button>
     </div>
-    <script src="popup.js"></script>
+  </div>
+
+  <!-- Your popup logic -->
+  <script src="popup.js"></script>
 </body>
 </html>
